@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import styles from "./Navbar.module.scss";
 import general from "styles/General.module.scss";
 
-const links = ["home", "about", "contact", "work", "skill"];
+const links = ["home", "about", "work", "skill", "testimonials", "contact"];
 
 const Navbar = () => {
   const [showMobile, setShowMobile] = useState(false);

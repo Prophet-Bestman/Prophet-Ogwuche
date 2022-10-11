@@ -19,6 +19,14 @@
   flex-direction: row;
 }
 
+.app__container2 {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  // flex-direction: row;
+}
+
 .app__flex {
   display: flex;
   justify-content: center;
