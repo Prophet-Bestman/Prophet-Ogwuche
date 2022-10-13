@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className={styles.app__navbar}>
       <div className={styles.app__navbar_logo}>
-        <img src="/img/logo.png" alt="logo" />
+        <p>Prophet</p>
       </div>
       <ul className={styles.app__navbar_links}>
         {links?.map((link) => (
