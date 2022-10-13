@@ -1,0 +1,107 @@
+.app__testimonials {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+
+.app__testimonials_item {
+  width: 70%;
+  min-height: 320px;
+  display: flex;
+  padding: 2rem;
+  border-radius: 14px;
+  background-color: #353535;
+  box-shadow: 0 0 30px #00000022;
+
+  transition: all 0.3s ease-in-out;
+
+  img {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 80%;
+    min-height: 450px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.app__testimonials_content {
+  flex: 1;
+  height: 100%;
+  padding: 0 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: var(--white-color);
+    font-family: var(--font-base);
+  }
+
+  h4 {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+  }
+
+  h5 {
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 1rem 0;
+  }
+}
+
+.app__testimonials_btns {
+  display: flex;
+  margin-top: 2rem;
+
+  div {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(145deg, #202020, #252525);
+    box-shadow: 4px 4px 8px #1e1e1e, -4px -4px 8px #282828;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 8px #00000044;
+      background-color: var(--secondary-color);
+      svg {
+        color: var(--white-color);
+      }
+    }
+
+    svg {
+      color: var(--secondary-color);
+      height: 20px;
+      width: 20px;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}

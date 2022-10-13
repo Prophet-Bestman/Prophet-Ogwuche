@@ -62,7 +62,9 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-    box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+    // box-shadow: 0 0 20px #cdcdcd11;
+    background: linear-gradient(145deg, #202020, #252525);
+    box-shadow: 15px 15px 30px #1e1e1e, -15px -15px 30px #282828;
   }
 
   .tag_cmp {
@@ -73,6 +75,17 @@
       width: 100%;
       text-transform: uppercase;
       text-align: right;
+    }
+
+    @media screen and (min-width: 860px) and (max-width: 1060px) {
+      .barge_cmp,
+      .tag_cmp {
+        transform: scale(80%);
+      }
+
+      p {
+        font-size: 11px;
+      }
     }
   }
 
@@ -103,28 +116,43 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: var(--white-color);
-
-    box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+    background: linear-gradient(145deg, #202020, #252525);
+    box-shadow: 15px 15px 30px #1e1e1e, -15px -15px 30px #282828;
 
     img {
       width: 60%;
       height: 60%;
+      object-fit: contain;
     }
   }
 
   div:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   div:nth-child(2) {
-    margin: 1.8rem;
-    width: 150px;
-    height: 150px;
+    margin: 0 1.8rem;
+    width: 135px;
+    height: 135px;
   }
   div:nth-child(3) {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
+  }
+  @media screen and (min-width: 860px) and (max-width: 1060px) {
+    div:nth-child(1) {
+      width: 80px;
+      height: 80px;
+    }
+    div:nth-child(2) {
+      margin: 0 1.5rem;
+      width: 115px;
+      height: 115px;
+    }
+    div:nth-child(3) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   @media screen and (min-width: 2000px) {
@@ -163,7 +191,8 @@
   position: relative;
 
   img {
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     object-fit: contain;
     z-index: 1;
   }
@@ -177,6 +206,12 @@
     z-index: 0;
     width: 100%;
     height: 90%;
+  }
+
+  @media screen and (max-width: 1120px) {
+    img {
+      width: 100%;
+    }
   }
 
   @media screen and (max-width: 860px) {

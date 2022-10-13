@@ -17,6 +17,7 @@
 
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
 .app__container2 {
@@ -55,7 +56,10 @@
 
   p {
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--gray-color);
+    @media screen and (max-width: 500px) {
+      font-size: 10px;
+    }
   }
 }
 
@@ -63,7 +67,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: var(--white-color);
   text-transform: capitalize;
 
   span {
@@ -82,6 +86,7 @@
 .p_text {
   font-size: 0.8rem;
   text-align: left;
+
   color: var(--gray-color);
   line-height: 1.5;
 
@@ -93,7 +98,7 @@
 .bold_text {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--black-color);
+  color: var(--white-color);
   text-align: left;
 
   @media screen and (min-width: 2000px) {
@@ -117,9 +122,10 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: #444;
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
+    box-shadow: 0 0 4px #78787866;
+    // border: 1px solid var(--lightGray-color);
 
     display: flex;
     justify-content: center;
@@ -164,11 +170,11 @@
 
   padding: 1rem;
 
-  .app__navigation-dot {
+  .app__navigation_dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #cbcbcb;
+    background-color: #efefef;
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;
