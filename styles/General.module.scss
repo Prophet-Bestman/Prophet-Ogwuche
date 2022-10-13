@@ -57,8 +57,9 @@
   p {
     text-transform: uppercase;
     color: var(--gray-color);
+    font-size: 11px;
     @media screen and (max-width: 500px) {
-      font-size: 10px;
+      font-size: 9px;
     }
   }
 }

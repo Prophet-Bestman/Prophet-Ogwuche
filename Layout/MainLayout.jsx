@@ -13,6 +13,7 @@ const MainLayout = ({ children, idName, classNames }) => {
         {children}
         <div className={general.copyright}>
           <p className={general.p_text}>@2022 PROPHET</p>
+          <p className={general.p_text}>Runs on sanity backend</p>
           <p className={general.p_text}>All Rights Reserved</p>
         </div>
       </div>
