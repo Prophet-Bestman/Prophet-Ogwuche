@@ -6,9 +6,8 @@ const NavDots = ({ idName }) => {
   return (
     <div className={general.app__navigation}>
       {links?.map((link) => (
-        <a href={`#${link}`}>
+        <a href={`#${link}`} key={"Link" + link}>
           <li
-            key={"Link" + link}
             style={{
               fontSize: "20px",
               color: idName === link ? "#313bac" : "#555",
